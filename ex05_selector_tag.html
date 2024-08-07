@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS 선택자</title>
+        <style>
+        /* 선택자 { 속성이름 : 속성값; } */
+        /* 태그이름 선택자 : 태그 이름을 그대로 사용. 해당 태그 요소 전부에 일괄 적용 */
+        /* 단일 태그 선택 */
+        p{
+            font-size: 20px;
+        }
+        /* 여러 태그에 적용하고 싶을때 복수 태그 선택 */
+        h1,span{
+            color: red;
+        }
+        /* 전체 선택자 */
+        /* 전체 선택자는 하위(문서의 하단)에 작성하더라도, 
+            개별 선택자에 비해 우선순위가 후순위 
+            전체 선택자를 작성할때에는 문서의 상단에 작성하는게 낫습니다
+        */
+        *{
+            font-size: 1.2rem;
+            color: royalblue;
+            background-color: rgb(247, 226, 206);
+        }
+        </style>
+    </head>
+    <body>
+        <h1>소연재</h1>
+        <hr>
+        <p>저는 체조 선수 소연재입니다</p>
+        <p>음악을 들으면서 책 읽기를 좋아합니다<br>김치찌개와 막국수 무척 좋아합니다</p>
+        <span>span 영역</span>
+        <div>div 영역</div>
+        <table border="1">
+            <tr>
+                <td>테이블</td>
+            </tr>
+        </table>
+    </body>
+</html>
