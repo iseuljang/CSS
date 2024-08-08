@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>절대 좌표 배치</title>
+    <style>
+        div{
+            position: absolute;
+            display: inline-block;
+        }
+        div > p {
+            width: 20px;
+            height: 20px;
+            background-color: rgb(243, 6, 58);
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            /* 부모 객체의 좌표계 relative, absolute, fixed, sticky 등으로 설정되어있을때 
+            자식 객체에 absolute 속성을 부여할 수 있다
+            부모 객체가 없을 경우 => body의 좌표를 이용해 절대 좌표가 결정됨
+            */
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <h3>Merry Christmas!!!</h3>
+    <hr>
+    <p>예수님이 탄생하셨습니다</p>
+    <br><br>
+    <div>
+        <img src="christmastree.png" alt="크리스마스 트리 이미지" style="width: 200px; height: 200px;">
+        <p style="left: 60px; top: 40px;">M</p>
+        <p style="left: 100px; top: 25px;">E</p>
+        <p style="left: 95px; top: 90px;">R</p>
+        <p style="left: 130px; top: 110px;">R</p>
+        <p style="left: 10px; top: 135px;">Y</p>
+    </div>
+</body>
+</html>

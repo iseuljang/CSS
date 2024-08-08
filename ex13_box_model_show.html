@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>박스모델</title>
+    <style>
+        div, span{
+            /* 컨텐츠 배경색 : 내부영역과 테두리 영역까지 색상이 칠해짐 */
+            background-color: antiquewhite;
+            width: 200px;
+            height: 200px;
+            /* 내부여백 */
+            padding: 20px;
+            /* 테두리 */
+            border: 10px dotted #138535;
+            /* 외부여백 */
+            margin: 20px;
+        }
+        div:hover{
+            /* 화면에 출력여부를 바꿈. hidden 화면에 출력하지 않음*/
+            /* visibility: hidden; */
+            /* 존재 자체를 삭제함 */
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div>박스1</div>
+    <div>박스2</div>
+    <span>박스3</span>
+    <span>박스4</span>
+</body>
+</html>
