@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>z index</title>
+    <style>
+        img {
+            width: 300px;
+            position: absolute;
+        }
+        /* 브라우저의 윈도우창을 평면이라고 가정할때에 
+            가로축 => x축, 세로축 => y축
+            가상의 높이축 => z축
+        */
+        .third{
+            top: 150px;
+            left: 200px;
+        }
+        .second{
+            left: 50px;
+            top: 50px;
+        }
+        .first{
+            /* z-index를 작성하지 않으면 차례대로 순번이 매겨집니다 */
+            /* z-index를 명시하면 명시된 번호로 적용됩니다 */
+            /* z-index의 값은 클수록 z축 위에 표시됩니다 */
+            z-index: 10;
+        }
+        img:hover{
+            width: 310px;
+            /* 마우스가 올라간 상태일때 이미지가 맨 위로 올라옴 */
+            z-index: 99;
+        }
+    </style>
+</head>
+<body>
+    <img class="first" src="img01.jpeg" alt="1번 이미지 바다절경">
+    <img class="second" src="img02.jpeg" alt="2번 이미지 호수풍경">
+    <img class="third" src="img03.jpeg" alt="3번 이미지 초원풍경">
+</body>
+</html>

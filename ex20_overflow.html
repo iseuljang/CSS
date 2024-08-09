@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Overflow</title>
+    <style>
+        p{
+            width: 20rem;
+            height: 5rem;
+            background-color: #C6D8DF;
+            border: 3px solid royalblue;
+        }
+        .hidden{
+            overflow: hidden;
+        }
+        .visibel{
+            overflow: visible;
+        }
+        .scroll{
+            overflow: scroll;
+        }
+        .auto{
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <p class="hidden">단락 태그 내부의 문자열입니다<br>
+        내부내용이 p태그 요소의 표시 크기를 넘어갈때 
+        어떻게 처리할 것인지에 대한 속성이 Overflow
+        그래서 내용을 충분히 길게 작성하고 있습니다
+    </p>
+    단락 태그 외부의 문자열입니다
+    <p class="visibel">단락 태그 내부의 문자열입니다<br>
+        내부내용이 p태그 요소의 표시 크기를 넘어갈때 
+        어떻게 처리할 것인지에 대한 속성이 Overflow
+        그래서 내용을 충분히 길게 작성하고 있습니다
+    </p>
+    단락 태그 외부의 문자열입니다
+    <p class="scroll">단락 태그 내부의 문자열입니다<br>
+        내부내용이 p태그 요소의 표시 크기를 넘어갈때 
+        어떻게 처리할 것인지에 대한 속성이 Overflow
+        그래서 내용을 충분히 길게 작성하고 있습니다
+    </p>
+    단락 태그 외부의 문자열입니다
+    <p class="auto">단락 태그 내부의 문자열입니다<br>
+        내부내용이 p태그 요소의 표시 크기를 넘어갈때 
+        어떻게 처리할 것인지에 대한 속성이 Overflow
+        그래서 내용을 충분히 길게 작성하고 있습니다
+    </p>
+    단락 태그 외부의 문자열입니다
+    <p class="auto">단락 태그 내부의 문자열입니다<br>
+    </p>
+    단락 태그 외부의 문자열입니다
+</body>
+</html>
